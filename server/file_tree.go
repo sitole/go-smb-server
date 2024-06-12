@@ -743,7 +743,7 @@ func (t *fileTree) writeImpl(ctx *compoundContext, pkt []byte, fileId *FileId, o
 }
 
 func (t *fileTree) lock(ctx *compoundContext, pkt []byte) error {
-	log.Errorf("Lock")
+	log.Debugf("Lock")
 	c := t.session.conn
 
 	//rsp := new(ErrorResponse)
